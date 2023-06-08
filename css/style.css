@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.generator-block {
+    width: 700px;
+    height: 500px;
+    filter: blur(0px);
+    background-color: #f3eded;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.title {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+.form-choose {
+    
+}
+.choose-string {
+    margin-bottom: 20px;
+}
+.text-width {
+    width: 30px;
+}
+
+fieldset {
+    border: none;
+}
+button{
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(88, 87, 87);
+    color: #f3eded;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.result {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.text {
+    margin-right: 20px;
+}
+
+@media(max-width: 1400px) {
+    body {
+        background-size: 200%;
+        padding-top: 50px;
+    }
+}
+
+
+@media(max-width: 950px) {
+    body {
+        background-size: 300%;
+        padding-top: 100px;
+    }
+    .generator-block {
+        width: 800px;
+        height: 800px;
+        font-size: 23px;
+        padding-top: 80px;
+    }
+    .result {
+        width: 300px;
+        height: 30px;
+    }
+    .number {
+        width: 70px;
+        height: 30px;
+        font-size: 30px;
+    }
+}
+@media(max-width: 760px) {
+    body {
+        background-size: 350%;
+        padding-top: 200px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 700px;
+        font-size: 30px;
+    }
+    .number {
+        width: 70px;
+        height: 30px;
+        font-size: 30px;
+    }
+    .checkbox {
+        width: 25px;
+        height: 25px;
+    }
+    button{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 700px) {
+    body {
+        background-size: 400%;
+        padding-top: 150px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 700px;
+        font-size: 30px;
+    }
+    .number {
+        width: 70px;
+        height: 30px;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 660px) {
+    body {
+        background-size: 500%;
+        padding-top: 150px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 800px;
+        font-size: 32px;
+    }
+    .number {
+        width: 90px;
+        height: 40px;
+        font-size: 30px;
+    }
+    button{
+        width: 130px;
+        height: 60px;
+        font-size: 25px;
+    }
+    .result {
+        width: 400px;
+        height: 30px;
+    }
+}
+@media(max-width: 590px) {
+    body {
+        background-size: 600%;
+        padding-top: 300px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 800px;
+        font-size: 35px;
+    }
+    .number {
+        width: 90px;
+        height: 40px;
+        font-size: 32px;
+    }
+    button{
+        width: 150px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .result {
+        width: 400px;
+        height: 40px;
+    }
+}
+@media(max-width: 490px) {
+    body {
+        background-size: 700%;
+        padding-top: 300px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 900px;
+        font-size: 37px;
+    }
+    .number {
+        width: 90px;
+        height: 40px;
+        font-size: 32px;
+    }
+    .checkbox {
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        width: 150px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .result {
+        width: 500px;
+        height: 50px;
+    }
+}
+@media(max-width: 500px) {
+    body {
+        background-size: 800%;
+        padding-top: 300px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 900px;
+        font-size: 40px;
+    }
+    .number {
+        width: 90px;
+        height: 40px;
+        font-size: 35px;
+    }
+    .checkbox {
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        width: 150px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .result {
+        width: 500px;
+        height: 50px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 470px) {
+    body {
+        background-size: 900%;
+        padding-top: 400px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 1200px;
+        font-size: 45px;
+    }
+    .number {
+        width: 90px;
+        height: 40px;
+        font-size: 40px;
+    }
+    .checkbox {
+        width: 35px;
+        height: 35px;
+    }
+    button{
+        width: 170px;
+        height: 90px;
+        font-size: 30px;
+    }
+    .result {
+        width: 600px;
+        height: 70px;
+        padding-top: 20px;
+    }
+}
+@media(max-width: 440px) {
+    body {
+        background-size: 1200%;
+        padding-top: 450px;
+    }
+    .generator-block {
+        width: 900px;
+        height: 1300px;
+        font-size: 50px;
+    }
+    .number {
+        width: 100px;
+        height: 50px;
+        font-size: 40px;
+    }
+    .checkbox {
+        width: 35px;
+        height: 35px;
+    }
+    button{
+        width: 170px;
+        height: 90px;
+        font-size: 30px;
+    }
+    .result {
+        width: 600px;
+        height: 70px;
+        padding-top: 20px;
+    }
+}
+@media(max-width: 380px) {
+    body {
+        background-size: 1600%;
+        padding-top: 450px;
+    }
+    .generator-block {
+        width: 950px;
+        height: 1400px;
+        font-size: 55px;
+    }
+    .number {
+        width: 150px;
+        height: 70px;
+        font-size: 50px;
+    }
+    .checkbox {
+        width: 40px;
+        height: 40px;
+    }
+    button{
+        width: 180px;
+        height: 90px;
+        font-size: 40px;
+    }
+    .result {
+        width: 600px;
+        height: 80px;
+        padding-top: 20px;
+    }
+}

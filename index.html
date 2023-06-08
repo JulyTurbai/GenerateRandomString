@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="generator-block">
+            <h2 class="title">Random String Generator</h2>
+            <form class="form" name="formChoose">
+                <fieldset>
+                    <p class="choose-string">String should be <input id="number" class="number" type="number" min="3" max="999">
+                    characters long.</p> 
+                    <div>
+                        <p class="choose-characters">Which characters are allowed to occur in the string?</p>
+                        <input class="checkbox" type="checkbox" id="check1" value="a">
+                        <label for="num">Numeric digits (0-9)</label>
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="check2" value="b">
+                        <label for="upp">Uppercase letters (A-Z)</label>
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="check3" value="c">
+                        <label for="low">Lowercase letters (a-z)</label>
+                    </div>
+                    <button id="generate" type="button">Generate</button>
+                </fieldset>
+            </form>
+            <hr class="line">
+            <div class="result">
+                <p>Result: <input class="result" id="result" type="text" readonly></p>
+                <div class="result-text"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
