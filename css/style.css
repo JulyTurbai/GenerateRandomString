@@ -122,6 +122,9 @@ button{
         height: 35px;
         font-size: 18px;
     }
+    .result {
+       font-size: 30px;
+    }
 }
 @media(max-width: 700px) {
     body {
